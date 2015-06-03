@@ -51,7 +51,15 @@ endif
 if filereadable("/etc/vim/vimrc.local")
   source /etc/vim/vimrc.local
 endif
-"Begin My Custom Edits"
+"===Begin My Custom Edits===="
 :colorscheme vividchalk
 :set number
+"Use  pathenogen to load bunldes"
+execute pathogen#infect()
+
+"Enable Mouse in all modes"
+set mouse=a
+"set to name of termail supporting mouse codes (xterm, xterm2, netterm, dec, jsbterm, pterm)"
+set ttymouse=xterm2
+"============================"
 
