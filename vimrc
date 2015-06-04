@@ -61,5 +61,18 @@ execute pathogen#infect()
 set mouse=a
 "set to name of termail supporting mouse codes (xterm, xterm2, netterm, dec, jsbterm, pterm)"
 set ttymouse=xterm2
+
+
+"Syntastics plubin"
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
+autocmd FileType javascript let b:syntastic_checkers = findfile('.jscsrc', '.;') != '' ? ['jscs'] : ['jshint']
 "============================"
 
