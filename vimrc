@@ -54,8 +54,13 @@ endif
 "===Begin My Custom Edits===="
 :colorscheme vividchalk
 :set number
+
+" added for pathogen
+filetype off
+
 "Use  pathenogen to load bunldes"
 execute pathogen#infect()
+execute pathogen#helptags()
 
 "Enable Mouse in all modes"
 set mouse=a
@@ -73,6 +78,17 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
+"== Added for python-mode =="
+filetype plugin indent on
+syntax on
+"== End added for pythod mode =="
+
+" change tabs
+set tabstop=3
+set shiftwidth=3
+set softtabstop=3
+
+" enable jscs
 autocmd FileType javascript let b:syntastic_checkers = findfile('.jscsrc', '.;') != '' ? ['jscs'] : ['jshint']
 "============================"
 
