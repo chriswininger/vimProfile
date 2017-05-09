@@ -54,7 +54,9 @@ endif
 "===Begin My Custom Edits===="
 :colorscheme vividchalk
 :set number
-
+:set shiftwidth=3
+set tabstop=3
+set softtabstop=0 noexpandtab
 " added for pathogen
 filetype off
 
@@ -91,4 +93,9 @@ set softtabstop=3
 " enable jscs
 autocmd FileType javascript let b:syntastic_checkers = findfile('.jscsrc', '.;') != '' ? ['jscs'] : ['jshint']
 "============================"
+
+" == use f8 for tab switching http://vim.wikia.com/wiki/Using_tab_pages
+" set switchbuf=usetab,newtab
+" nnoremap <F8> :sbnext<CR>
+" nnoremap <S-F8> :sbprevious<CR>
 
