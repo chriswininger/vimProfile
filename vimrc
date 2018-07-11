@@ -98,4 +98,8 @@ autocmd FileType javascript let b:syntastic_checkers = findfile('.jscsrc', '.;')
 " set switchbuf=usetab,newtab
 " nnoremap <F8> :sbnext<CR>
 " nnoremap <S-F8> :sbprevious<CR>
+set backspace=indent,eol,start
+
+" (CAW) Enable spellcheck
+set spell
 
