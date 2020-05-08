@@ -56,7 +56,7 @@ endif
 :set number
 :set shiftwidth=3
 set tabstop=3
-set softtabstop=0 noexpandtab
+set expandtab ts=3 sw=3 ai
 " added for pathogen
 filetype off
 
@@ -86,9 +86,9 @@ syntax on
 "== End added for pythod mode =="
 
 " change tabs
-set tabstop=3
-set shiftwidth=3
-set softtabstop=3
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
 
 " enable jscs
 autocmd FileType javascript let b:syntastic_checkers = findfile('.jscsrc', '.;') != '' ? ['jscs'] : ['jshint']
@@ -103,3 +103,10 @@ set backspace=indent,eol,start
 " (CAW) Enable spellcheck
 set spell
 
+"=== Added For Dracula Pro Install ==="
+"packadd! dracula_pro"
+
+syntax enable
+
+colorscheme dracula_pro_blade
+"======================================"
