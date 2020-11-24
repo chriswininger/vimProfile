@@ -1,0 +1,5 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =3
+let g:netrw_dirhist_3='/Users/chris/projects/security-research-dashboard-admin/backend/target/generated-sources/typescript-redux-query/src/apis'
+let g:netrw_dirhist_2='/Users/chris/projects/data-security-prototypes/localStackSQSTesting'
+let g:netrw_dirhist_1='/Users/chris/.nvm/versions/node/v10.16.0'

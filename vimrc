@@ -108,5 +108,10 @@ set spell
 
 syntax enable
 
-colorscheme dracula_pro_blade
+colorscheme dracula_pro_buffy
 "======================================"
+"
+"=== Nerdtree ==="
+syntax on
+filetype plugin indent on
+
