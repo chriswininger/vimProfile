@@ -115,3 +115,7 @@ colorscheme dracula_pro_buffy
 syntax on
 filetype plugin indent on
 
+"keep selection after indent"
+vnoremap > >gv
+vnoremap < <gv
+
