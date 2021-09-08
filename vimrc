@@ -111,9 +111,9 @@ syntax enable
 colorscheme dracula_pro_buffy
 "======================================"
 "
-"=== Nerdtree ==="
-syntax on
-filetype plugin indent on
+"=== Nerdtree  (Removing in favor of ctrlp) ==="
+"syntax on
+"filetype plugin indent on
 
 "keep selection after indent"
 vnoremap > >gv
